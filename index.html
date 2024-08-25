@@ -6,10 +6,35 @@
     <link rel="stylesheet" href="src/style.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.37/moment-timezone-with-data-1970-2030.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
     <title>World Clock</title>
   </head>
   <body>
-    <h1>WORLD CLOCK</h1>
+    <div class="container">
+      <h1>WORLD CLOCK</h1>
+      <select name="select-country" id="select-country">
+        <option value="">Select a city..</option>
+        <option value="london">London</option>
+        <option value="tehran">Tehran</option>
+      </select>
+      <div class="time-container">
+        <div class="city-container">
+          <div class="time">1:48:15 <small> am </small></div>
+          <div class="city">London</div>
+          <div class="date">August 15th 2022</div>
+        </div>
+        <div class="city-container">
+          <div class="time">1:48:15 <small> am </small></div>
+          <div class="city">Tehran</div>
+          <div class="date">August 15th 2022</div>
+        </div>
+      </div>
+    </div>
     <footer>
       <p>
         This project was coded by
